@@ -1,0 +1,60 @@
+p{
+    color: #46f1e3;
+    font-size: 20px;
+    font-family: Helvetica, Arial;
+    /*Se o nome da fonte for composto, ex: Comic Sans Ms, o mesmo deve ser escrito entre aspas.
+     A fonte mais usada por webdesigners é a Helvetica, mas por ser uma fonte paga, nem toda máquina terá acesso a ela,
+      por isso define-se mais fontes a serem usadas no caso de indisponibilidade. Caso isso não seja feito, o navegador usará a fonte padrão
+      */
+}
+
+body{
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #46f1e3;
+    height: 100px;
+}
+
+/*Pra isolar tags como as divs, é criado um id unico no código html,
+e é usado esse id pra identificar o código aqui no doc css, adiciona-se uma # antes do id*/
+
+footer{
+    clear: both;
+    /*O clear: both; é usado para resolver a sobreposição feita pelo float. Ele sempre deve ser usado naquilo que estiver
+     abaixo de onde foi usado o float*/
+    background-color: blueviolet;
+    height: 30px;
+}
+
+#div_esquerda{
+    background-color: blue;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    
+    /*o float é usado para forçar uma posiçao, nesse caso, esquerda. O problema dele é que ele sobrepõe o que vem depois,
+     esse problema será tratado lá*/
+     float: left;
+    }
+    
+    
+    #div_direita{
+     background-color: green;
+     min-height: 300px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     width: 38%;
+     float: right;
+    }
+    
+
+    .container{
+        width: 960px;
+        margin: 0px auto; /*O primeiro dado define a altura, nesse caso, 0*/
+    }

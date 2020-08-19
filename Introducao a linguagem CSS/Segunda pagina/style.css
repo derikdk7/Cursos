@@ -1,0 +1,96 @@
+p{
+    color:white;
+    font-size: 20px;
+    font-family: Helvetica, Arial;
+    /*Se o nome da fonte for composto, ex: Comic Sans Ms, o mesmo deve ser escrito entre aspas.
+     A fonte mais usada por webdesigners é a Helvetica, mas por ser uma fonte paga, nem toda máquina terá acesso a ela,
+      por isso define-se mais fontes a serem usadas no caso de indisponibilidade. Caso isso não seja feito, o navegador usará a fonte padrão
+      */
+      text-shadow: 1px 1px 1px #302f2f;
+}
+
+body{
+    background-color: #292828;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial;
+    color: grey;
+}
+header{
+    background-color: black;
+    height: 80px;
+    padding: 0px 20px 20px 0px;
+    
+    
+}
+
+/*Pra isolar tags como as divs, é criado um id unico no código html,
+e é usado esse id pra identificar o código aqui no doc css, adiciona-se uma # antes do id*/
+
+footer{
+    clear: both;
+    /*O clear: both; é usado para resolver a sobreposição feita pelo float. Ele sempre deve ser usado naquilo que estiver
+     abaixo de onde foi usado o float*/
+    background-color: rgb(48, 46, 46);
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #302f2f;
+}
+h1{
+    color: rgb(201, 225, 228);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(11, 48, 59);
+    margin-bottom: 50px;
+}
+
+#logo{
+    float: left;
+}
+
+#menu{
+    
+    margin-top: 40px; 
+    float: right;
+    
+}
+#menu a{ /*menu a refere-se a apenas a tag a(links) do menu*/
+    text-decoration: none; /*refere-se a formatação de underline, overline, line-through ou blink*/
+    padding: 43px 15px;
+    color: white;
+    text-shadow: 1px 1px 1px #696969;
+}
+
+#menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+#div_principal{
+    clear: both;
+    background-image: url('natureza.jpg');
+    background-size: 100%;
+    min-height: 450px;
+    padding: 50px 0 0 0;
+}
+
+    
+.container{
+        width: 960px;
+        margin: 0 auto; /*O primeiro dado define a altura, nesse caso, 0*/
+}
+
+.efeito{
+    background-color: rgba(0, 0, 0, 0.4); /*Efeito alfa, usado pro texto ficar mais legivel.os 3 primeiros 0 se referem as cores rgb, o 0.4 se refere a transparencia*/
+    padding:50px 0 50px 0;
+}
+     
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="texto1.txt" method="post">
+        <label>Texto</label>
+       <input type="text" name="texto1" placeholder="texto">
+       
+       <br>
+
+       <label>Senha</label>
+       <input type="password" name="senha" placeholder="senha">
+
+       <br>
+
+       <label>Oculto</label>
+       <input type="hidden" name="informacao_oculta" value="mensgaem oculta">
+
+       <br>
+
+       <label>Select</label>
+       <select name="Selecao">
+        <option value="1">Opção 1</option>
+        <option value="2">Opção 2</option>
+       </select>
+
+       <br>
+
+       <!--No tipo radio, manter o mesmo nome pra cada "questao", onde só uma escolha será aceita-->
+       <label>Radio 1</label> <br>
+       <input type="radio" name="radio1" value="1">Valor 1 <br>
+       <input type="radio" name="radio1" value="2">Valor 2 <br>
+
+       <label>Radio 2</label> <br>
+       <input type="radio" name="radio2" value="1">Valor 1 <br>
+       <input type="radio" name="radio2" value="2">Valor 2 <br>
+
+       <!--No tipo checkbox, manter o mesmo nome pra cada "questao", onde uma ou várias escolhas serão aceitas, tambem 
+    é possivel utilizar o checked, pra que a caixa já venha marcada-->
+       <label>Checkbox</label> <br>
+       <div>
+       <input type="checkbox" name="ck1" value="1" checked>Valor 1 <br>
+       <input type="checkbox" name="ck1" value="2">Valor 2 <br>
+       <input type="checkbox" name="ck1" value="2">Valor 3 <br>
+       </div>
+
+       <label>Checkbox2</label> <br>
+       <input type="checkbox" name="ck2" value="1">Valor 1 <br>
+       <input type="checkbox" name="ck2" value="2">Valor 2 <br>
+       <input type="checkbox" name="ck2" value="2">Valor 3 <br>
+
+       <input type="submit" name="enviar" value="submit">
+
+</body>
+
+</html>

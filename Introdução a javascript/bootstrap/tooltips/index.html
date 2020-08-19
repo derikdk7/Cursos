@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tooltips</title>
+        <meta charset="utf-8">
+        <!--CSS-->
+       <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Tooltipss</h1>
+            <button class="btn btn-success" data-toggle="tooltip" data-placement = "top" title="Texto do tooltip">Meu toooltip</button>
+
+            <button class="btn btn-success" data-toggle="tooltip" data-placement = "right" title="Texto do tooltip">Meu toooltip</button>
+
+            <button class="btn btn-success" data-toggle="tooltip" data-placement = "bottom" title="Texto do tooltip">Meu toooltip</button>
+
+            <button class="btn btn-success" data-toggle="tooltip" data-placement = "left" title="Texto do tooltip">Meu toooltip</button>
+
+
+
+        </div>
+        
+        <footer>
+            <script src="public/js/jquery.js"></script>
+            <script src="public/js/bootstrap.bundle.min.js"></script>
+            <script type="text/javascript">
+                $(function(){
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+            </script>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Popover</title>
+        <meta charset="utf-8">
+        <!--CSS-->
+       <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Popovers</h1>
+            <button class="btn btn-primary" title="Título do popover" data-toggle="popover" data-content="Conteudo do popover" 
+            data-placement = "top" >Meu popover</button>
+
+            <button class="btn btn-primary" data-toggle="popover" data-content="Conteudo do popover" 
+            data-placement = "right" >Meu popover</button>
+
+            <button class="btn btn-primary" data-toggle="popover" data-content="Conteudo do popover" 
+            data-placement = "bottom" >Meu popover</button>
+
+            <button class="btn btn-primary" data-toggle="popover" data-content="Conteudo do popover" 
+            data-placement = "left" >Meu popover</button>
+
+
+
+        </div>
+        
+        <footer>
+            <script src="public/js/jquery.js"></script>
+            <script src="public/js/bootstrap.bundle.min.js"></script>
+            <script>
+                $(function(){
+                    $('[data-toggle="popover"]').popover();
+                });
+            </script>
+        </footer>
+    </body>
+
+</html>

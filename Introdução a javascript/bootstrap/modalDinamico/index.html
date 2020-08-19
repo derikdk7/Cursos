@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modal</title>
+        <meta charset="utf-8">
+        <!--CSS-->
+       <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Modal</h1>
+            
+            <button class="btn btn-secondary" data-nome="Derik" data-toggle="modal" data-target="#conteudoModal" >
+                Mensagem para Derik
+            </button>
+
+            <button class="btn btn-secondary" data-nome="Marcelo" data-toggle="modal" data-target="#conteudoModal" >
+                Mensagem para Marcelo
+            </button>
+
+            <div id="conteudoModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Meu Modal</h4>
+                            <button class="close" data-dismiss="modal" arial-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                
+                                <div class="col-4">
+                                    <span>Destinatário: </span>
+                                </div>
+
+                                <div class="col-8">
+                                    <input type="text" name="para" class="form-control">
+                                </div>
+                                
+                            </div><br>
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <span>Mensagem: </span>
+                                </div>
+
+                                <div class="col-8">
+                                    <textarea class="form-control"></textarea>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <footer>
+            <script src="public/js/jquery.js"></script>
+            <script src="public/js/bootstrap.bundle.min.js"></script>
+            <script type="text/javascript">
+                $('#conteudoModal').on('show.bs.modal', function(event){
+                    var button = $(event.relatedTarget);
+                    var recipient = button.data('nome');
+                    var modal = $(this);
+                    modal.find('.modal-title').text('Mensagem para '+recipient);
+                    modal.find('.modal-body input').val(recipient);
+                });
+            </script>
+        </footer>
+    </body>
+
+</html>
